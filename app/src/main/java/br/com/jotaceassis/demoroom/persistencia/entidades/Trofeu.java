@@ -11,7 +11,7 @@ import android.arch.persistence.room.PrimaryKey;
         childColumns = "user_id"))
 public class Trofeu {
 
-    @PrimaryKey
+    @PrimaryKey (autoGenerate = true)
     private int id;
     private String descricao;
 

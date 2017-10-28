@@ -1,5 +1,6 @@
 package br.com.jotaceassis.demoroom.persistencia.dao;
 
+import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Query;
@@ -10,7 +11,7 @@ import java.util.List;
 import br.com.jotaceassis.demoroom.persistencia.entidades.Trofeu;
 import br.com.jotaceassis.demoroom.persistencia.entidades.Usuario;
 
-
+@Dao
 public interface TrofeuDAO {
 
     @Query("SELECT * FROM trofeu WHERE id = :id")
